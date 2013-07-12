@@ -5,7 +5,14 @@
 #include <cstdlib>
 #include <iostream>
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+GLuint   mega; 
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
 float sumbux=0.0, sumbuy=0.0, sumbuz=0.0;
 float sudut=0.0f;
 float vektorx=0.0f, vektorz=-1.0f;
@@ -13,8 +20,19 @@ float x=0.0f, z=5.0f;
 float pindahx =0.0, pindahy=0.0, pindahz=0.0;
 float xpos = 0, ypos = 0, zpos = 0, xrot = 0, yrot = 0, putary=0, angle=0.0; //Rotasi Sudut
 float inner, outer; int garisv,garish; //Variabel Torus
+<<<<<<< HEAD
 
  
+=======
+<<<<<<< HEAD
+void   matahari(void);
+void   elang(void);
+void   awan(void);
+ 
+=======
+
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
 void bangun (int w, int h)
 {
      if (h == 0)
@@ -140,7 +158,41 @@ void kotak ()
      glEnd();
 }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+void awan(void)
+{
+mega = glGenLists(1);  // untuk menginisialisasi mega yaitu bentuk awan
+glNewList(mega, GL_COMPILE); //mengcompilenya dimasukan kedalam list
+glPushMatrix();
+glColor3ub(153, 223, 255);
+glutSolidSphere(10, 50, 50);
+glPopMatrix();
+glPushMatrix();
+glTranslatef(10,0,1);
+glutSolidSphere(5, 20, 20);
+glPopMatrix();
+glPushMatrix();
+glTranslatef(-2,6,-2);
+glutSolidSphere(7, 50, 50);
+glPopMatrix();
+glPushMatrix();
+glTranslatef(-10,-3,0);
+glutSolidSphere(7, 50, 50);
+glPopMatrix();
+glPushMatrix();
+glTranslatef(6,-2,2);
+glutSolidSphere(7, 50, 50);
+glPopMatrix();
+glEndList(); //untuk menutup glnewlist
+}
+
+
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
 void dasar()
 {
      glBegin(GL_QUADS); //Jalan atas kota
@@ -340,11 +392,22 @@ void display (void)
      GLfloat mat_emission[] = { 0.0, 0.3, 0.3, 0.6 };
      GLfloat mat_solid[] = { 0.75, 0.75, 0.0, 1.0 };
      GLfloat mat_zero[] = { 0.0, 0.0, 0.0, 1.0 };
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
      
 
 
 
      //GLfloat light_position[] = {0.0, 0.0, 1.0, 1.0};  
+<<<<<<< HEAD
+=======
+=======
+     //GLfloat light_position[] = {0.0, 0.0, 1.0, 1.0};
+          
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
      glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
      glClearColor(0.7,0.7,1.0,0.5);
      
@@ -743,7 +806,10 @@ void display (void)
      
 //kursi dalam taman kanan samping kolam
      glPushMatrix();
+<<<<<<< HEAD
   
+=======
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
      glColor3f(0.8f, 0.5f, 0.3f);
      glTranslatef(2.38,-0.972,1.22);
      glScalef(0.35,0.05,0.15);
@@ -756,7 +822,11 @@ void display (void)
      glScalef(0.32,0.11,0.05);
      kubussolid();
      glPopMatrix();
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
 //kursi dalam taman kanan samping kolam
      glPushMatrix();
      glColor3f(0.8f, 0.5f, 0.3f);
@@ -771,10 +841,18 @@ void display (void)
      glScalef(0.32,0.07,0.15);
      kubussolid();
      glPopMatrix();
+<<<<<<< HEAD
      
 
      
     
+=======
+<<<<<<< HEAD
+     
+    
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
      //-------------------AKHIR KURSI DI TAMAN---------------------
      
 //------------------TROTOAR-------------------------------
@@ -1448,6 +1526,10 @@ void display (void)
      glPopMatrix();
      glDisable(GL_LIGHTING);
      glDisable(GL_LIGHT0); 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
      
      glPushMatrix();
      glTranslatef(0.65,-0.99,-0.82);
@@ -1459,6 +1541,11 @@ void display (void)
      glDisable(GL_LIGHT0); 
      
      
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
      //-------------------------------------------- DINDING PEMBATAS ---------------------------------
        //Dinding kiri
      glPushMatrix();
@@ -3894,8 +3981,20 @@ int main(int argc, char *argv[])
     glutInitWindowPosition(0,0);
     glutCreateWindow("Program Tugas Besar");
     init();
+<<<<<<< HEAD
     
     glutDisplayFunc(display);
+=======
+<<<<<<< HEAD
+    
+    awan();
+
+
+    glutDisplayFunc(display);
+=======
+ glutDisplayFunc(display);
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
+>>>>>>> 273a1515cc9cb55249d3c679ba1971bcbcde15e1
     glutReshapeFunc(bangun);
     glutIdleFunc(display);
     glutKeyboardFunc(keyboard);
