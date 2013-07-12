@@ -5,7 +5,10 @@
 #include <cstdlib>
 #include <iostream>
 
+<<<<<<< HEAD
 GLuint   mega; 
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
 float sumbux=0.0, sumbuy=0.0, sumbuz=0.0;
 float sudut=0.0f;
 float vektorx=0.0f, vektorz=-1.0f;
@@ -13,10 +16,14 @@ float x=0.0f, z=5.0f;
 float pindahx =0.0, pindahy=0.0, pindahz=0.0;
 float xpos = 0, ypos = 0, zpos = 0, xrot = 0, yrot = 0, putary=0, angle=0.0; //Rotasi Sudut
 float inner, outer; int garisv,garish; //Variabel Torus
+<<<<<<< HEAD
 void   matahari(void);
 void   elang(void);
 void   awan(void);
  
+=======
+
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
 void bangun (int w, int h)
 {
      if (h == 0)
@@ -142,6 +149,7 @@ void kotak ()
      glEnd();
 }
 
+<<<<<<< HEAD
 void awan(void)
 {
 mega = glGenLists(1);  // untuk menginisialisasi mega yaitu bentuk awan
@@ -170,6 +178,8 @@ glEndList(); //untuk menutup glnewlist
 }
 
 
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
 void dasar()
 {
      glBegin(GL_QUADS); //Jalan atas kota
@@ -369,11 +379,16 @@ void display (void)
      GLfloat mat_emission[] = { 0.0, 0.3, 0.3, 0.6 };
      GLfloat mat_solid[] = { 0.75, 0.75, 0.0, 1.0 };
      GLfloat mat_zero[] = { 0.0, 0.0, 0.0, 1.0 };
+<<<<<<< HEAD
      
 
 
 
      //GLfloat light_position[] = {0.0, 0.0, 1.0, 1.0};  
+=======
+     //GLfloat light_position[] = {0.0, 0.0, 1.0, 1.0};
+          
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
      glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
      glClearColor(0.7,0.7,1.0,0.5);
      
@@ -799,8 +814,11 @@ void display (void)
      glScalef(0.32,0.07,0.15);
      kubussolid();
      glPopMatrix();
+<<<<<<< HEAD
      
     
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
      //-------------------AKHIR KURSI DI TAMAN---------------------
      
 //------------------TROTOAR-------------------------------
@@ -1474,6 +1492,7 @@ void display (void)
      glPopMatrix();
      glDisable(GL_LIGHTING);
      glDisable(GL_LIGHT0); 
+<<<<<<< HEAD
      
      glPushMatrix();
      glTranslatef(0.65,-0.99,-0.82);
@@ -1485,6 +1504,8 @@ void display (void)
      glDisable(GL_LIGHT0); 
      
      
+=======
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
      //-------------------------------------------- DINDING PEMBATAS ---------------------------------
        //Dinding kiri
      glPushMatrix();
@@ -3920,11 +3941,15 @@ int main(int argc, char *argv[])
     glutInitWindowPosition(0,0);
     glutCreateWindow("Program Tugas Besar");
     init();
+<<<<<<< HEAD
     
     awan();
 
 
     glutDisplayFunc(display);
+=======
+ glutDisplayFunc(display);
+>>>>>>> e16b0b9b5191e522be15086f88d6d34418e1c6d3
     glutReshapeFunc(bangun);
     glutIdleFunc(display);
     glutKeyboardFunc(keyboard);
